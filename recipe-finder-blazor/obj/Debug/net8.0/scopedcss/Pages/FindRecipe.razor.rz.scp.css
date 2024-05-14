@@ -1,0 +1,62 @@
+.find-recipe[b-lmuil0b4uz] {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+.find-recipe .search-form[b-lmuil0b4uz] {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.find-recipe .search-form input[b-lmuil0b4uz] {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.find-recipe .search-form select[b-lmuil0b4uz] {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.find-recipe .search-form button[b-lmuil0b4uz] {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #F0E3D3;
+  cursor: pointer;
+}
+.find-recipe .search-form button:hover[b-lmuil0b4uz] {
+  border: 1px solid #aaa;
+}
+.find-recipe .recipes[b-lmuil0b4uz] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.find-recipe .recipes div[b-lmuil0b4uz] {
+  background: #F0E3D3;
+  width: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.find-recipe .recipes div img[b-lmuil0b4uz] {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.find-recipe .recipes div h3[b-lmuil0b4uz] {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.find-recipe .recipes div p[b-lmuil0b4uz] {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.find-recipe .recipes div:hover[b-lmuil0b4uz] {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.025);
+  cursor: pointer;
+}

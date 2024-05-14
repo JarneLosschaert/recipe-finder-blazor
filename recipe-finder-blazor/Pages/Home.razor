@@ -1,0 +1,21 @@
+﻿@page "/"
+
+@inject NavigationManager NavigationManager
+
+<div class="home">
+    <div class="header">
+        <img src="assets/meals.jpg" alt="meals" />
+        <h2>Find your recipes here!</h2>
+    </div>
+    <div class="content">
+        <p>Search for your favorite recipes and find the best food for you!</p>
+        <button @onclick="NavigateToFindRecipes">Search now</button>
+    </div>
+</div>
+
+@code {
+    private void NavigateToFindRecipes()
+    {
+        NavigationManager.NavigateTo("/find-recipe");
+    }
+}

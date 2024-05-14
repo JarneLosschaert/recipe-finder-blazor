@@ -1,0 +1,37 @@
+.home .header[b-8nth9rxvwh] {
+  position: relative;
+}
+.home .header img[b-8nth9rxvwh] {
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+.home .header h2[b-8nth9rxvwh] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Lobster", cursive;
+}
+.home .content[b-8nth9rxvwh] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.home .content button[b-8nth9rxvwh] {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #F0E3D3;
+  cursor: pointer;
+}
+.home .content button:hover[b-8nth9rxvwh] {
+  border: 1px solid #aaa;
+}

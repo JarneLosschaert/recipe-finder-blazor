@@ -1,0 +1,117 @@
+﻿@page "/find-recipe"
+
+@inject NavigationManager NavigationManager
+
+<div class="find-recipe">
+    <div class="search-form">
+        <input type="text" placeholder="Search for recipes..." @bind="query" @onkeyup="HandleKeyPress" />
+        <select @bind="diet">
+            <option value="">Diet</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="gluten free">Gluten Free</option>
+            <option value="dairy free">Dairy Free</option>
+            <option value="ketogenic">Ketogenic</option>
+            <option value="paleo">Paleo</option>
+            <option value="primal">Primal</option>
+            <option value="whole30">Whole30</option>
+        </select>
+        <select @bind="cuisine">
+            <option value="">Cuisine</option>
+            <option value="african">African</option>
+            <option value="american">American</option>
+            <option value="british">British</option>
+            <option value="cajun">Cajun</option>
+            <option value="caribbean">Caribbean</option>
+            <option value="chinese">Chinese</option>
+            <option value="eastern european">Eastern European</option>
+            <option value="european">European</option>
+            <option value="french">French</option>
+            <option value="german">German</option>
+            <option value="greek">Greek</option>
+            <option value="indian">Indian</option>
+            <option value="irish">Irish</option>
+            <option value="italian">Italian</option>
+            <option value="japanese">Japanese</option>
+            <option value="jewish">Jewish</option>
+            <option value="korean">Korean</option>
+            <option value="latin american">Latin American</option>
+            <option value="mediterranean">Mediterranean</option>
+            <option value="mexican">Mexican</option>
+            <option value="middle eastern">Middle Eastern</option>
+            <option value="nordic">Nordic</option>
+            <option value="southern">Southern</option>
+            <option value="spanish">Spanish</option>
+            <option value="thai">Thai</option>
+            <option value="vietnamese">Vietnamese</option>
+        </select>
+        <button @onclick="SearchRecipes" disabled="@loading">Search</button>
+    </div>
+
+    @if (loading)
+    {
+        <p>Loading...</p>
+    }
+
+
+    @if (recipes.Count > 0)
+    {
+        <div class="recipes">
+
+            @foreach (var recipe in recipes)
+            {
+                <div @onclick="(() => ShowRecipeDetails(recipe))">
+                    <img src="@recipe.Image" alt="@recipe.Title" />
+                    <p>@recipe.Title</p>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    private string query = "";
+    private string diet = "";
+    private string cuisine = "";
+    private List<Recipe> recipes = new List<Recipe>();
+    private string error = "";
+    private bool loading;
+
+    [Inject]
+    private RecipeService recipeService { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await SearchRecipes();
+    }
+
+    private async Task SearchRecipes()
+    {
+        loading = true;
+        error = "";
+
+        try
+        {
+            recipes = await recipeService.SearchRecipes(query, diet, cuisine);
+        }
+        catch (Exception ex)
+        {
+            error = ex.Message;
+        }
+
+        loading = false;
+    }
+
+    private void HandleKeyPress(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            SearchRecipes();
+        }
+    }
+
+    private void ShowRecipeDetails(Recipe recipe)
+    {
+        NavigationManager.NavigateTo($"/recipe/{recipe.Id}");
+    }
+}

@@ -1,0 +1,30 @@
+﻿[
+  {
+    "outputFile": "Pages/About.razor.css",
+    "inputFile": "Pages/About.razor.scss"
+  },
+  {
+    "outputFile": "Pages/Home.razor.css",
+    "inputFile": "Pages/Home.razor.scss"
+  },
+  {
+    "outputFile": "Layout/Header.razor.css",
+    "inputFile": "Layout/Header.razor.scss"
+  },
+  {
+    "outputFile": "Layout/Footer.razor.css",
+    "inputFile": "Layout/Footer.razor.scss"
+  },
+  {
+    "outputFile": "Layout/MainLayout.razor.css",
+    "inputFile": "Layout/MainLayout.razor.scss"
+  },
+  {
+    "outputFile": "Pages/FindRecipe.razor.css",
+    "inputFile": "Pages/FindRecipe.razor.scss"
+  },
+  {
+    "outputFile": "Pages/RecipeDetails.razor.css",
+    "inputFile": "Pages/RecipeDetails.razor.scss"
+  }
+]

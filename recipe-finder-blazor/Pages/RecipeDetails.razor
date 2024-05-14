@@ -1,0 +1,80 @@
+﻿@page "/recipe/{id}"
+
+@if (loading)
+{
+    <div class="loader">Loading...</div>
+}
+else if (!string.IsNullOrEmpty(error))
+{
+    <div class="error">@error</div>
+}
+else
+{
+    <div class="recipe-details">
+        <div class="content">
+            <div class="header">
+                <h2>@recipe.Title</h2>
+                <div class="scores">
+                    <p>Time: @recipe.ReadyInMinutes minutes</p>
+                    <p>Health score: @recipe.HealthScore</p>
+                    <p>Servings: @recipe.Servings</p>
+                    <p>Price: $@recipe.PricePerServing</p>
+                </div>
+            </div>
+            <div class="details">
+                <div class="ingredients">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        @foreach (var ingredient in recipe.ExtendedIngredients)
+                        {
+                            <li>
+                                <p>@ingredient.Measures.Metric.Amount @ingredient.Measures.Metric.UnitShort <span>@ingredient.Name</span></p>
+                            </li>
+                        }
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Instructions</h3>
+                    <div>@(new MarkupString(recipe.Instructions))</div>
+                </div>
+            </div>
+        </div>
+        <img src="@recipe.Image" alt="@recipe.Title" />
+    </div>
+}
+
+@code {
+    [Parameter]
+    public string Id { get; set; }
+
+    private Recipe recipe;
+    private bool loading = false;
+    private string error = "";
+
+    [Inject]
+    private RecipeService recipeService { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetRecipeDetails(Id);
+    }
+
+    private async Task GetRecipeDetails(string id)
+    {
+        try
+        {
+            loading = true;
+            error = "";
+
+            int idNr = int.Parse(id);
+            recipe = await recipeService.GetRecipeInformation(idNr);
+
+            loading = false;
+        }
+        catch (Exception ex)
+        {
+            error = "An error occurred while fetching recipe details: " + ex.Message;
+            loading = false;
+        }
+    }
+}

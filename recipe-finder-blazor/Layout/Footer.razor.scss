@@ -1,0 +1,10 @@
+@import "../wwwroot/css/colors.scss";
+
+footer {
+    background-color: #333;
+    padding: 1rem 2rem;
+
+    p {
+        color: $white;
+    }
+}

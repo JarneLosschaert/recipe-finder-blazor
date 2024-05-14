@@ -1,0 +1,16 @@
+.app[b-hno46idn9c] {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.app .content[b-hno46idn9c] {
+  flex: 1;
+}
+
+body[b-hno46idn9c] {
+  background-color: #FFF5E7;
+}
+body p[b-hno46idn9c] {
+  font-size: 1rem;
+  color: #40565C;
+}

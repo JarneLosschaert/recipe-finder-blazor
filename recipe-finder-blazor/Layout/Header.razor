@@ -1,0 +1,32 @@
+﻿@inject NavigationManager NavigationManager
+
+<header>
+    <div class="logo">
+        <img src="assets/logo.png" alt="logo" />
+        <h1>Find the <br /> best food</h1>
+    </div>
+    <nav>
+        <a href="/" @onclick='(() => SelectTab("home"))' class='@IsSelected("home")'>Home</a>
+        <a href="/find-recipe" @onclick='(() => SelectTab("find-recipe"))' class='@IsSelected("find-recipe")'>Find recipe</a>
+        <a href="/about" @onclick='(() => SelectTab("about"))' class='@IsSelected("about")'>About</a>
+    </nav>
+</header>
+
+@code {
+    private string selected = "home";
+
+    protected override void OnInitialized()
+    {
+        selected = NavigationManager.Uri.Split('/', StringSplitOptions.RemoveEmptyEntries)[0];
+    }
+
+    private void SelectTab(string tab)
+    {
+        selected = tab;
+    }
+
+    private string IsSelected(string tab)
+    {
+        return selected == tab ? "selected" : "";
+    }
+}

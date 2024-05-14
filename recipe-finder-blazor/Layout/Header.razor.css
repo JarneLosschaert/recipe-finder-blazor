@@ -1,0 +1,35 @@
+﻿header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: #F0E3D3;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  display: flex;
+}
+header .logo h1 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #40565C;
+}
+header .logo img {
+  width: 2rem;
+  height: 2rem;
+}
+header nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+header nav a {
+  color: #40565C;
+}
+header nav a:hover {
+  color: #557A80;
+}
+header nav a.selected {
+  color: #557A80;
+}

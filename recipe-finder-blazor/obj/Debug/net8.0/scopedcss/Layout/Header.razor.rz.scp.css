@@ -1,0 +1,35 @@
+header[b-8yl118dhnv] {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: #F0E3D3;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+header .logo[b-8yl118dhnv] {
+  display: flex;
+}
+header .logo h1[b-8yl118dhnv] {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #40565C;
+}
+header .logo img[b-8yl118dhnv] {
+  width: 2rem;
+  height: 2rem;
+}
+header nav[b-8yl118dhnv] {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+header nav a[b-8yl118dhnv] {
+  color: #40565C;
+}
+header nav a:hover[b-8yl118dhnv] {
+  color: #557A80;
+}
+header nav a.selected[b-8yl118dhnv] {
+  color: #557A80;
+}

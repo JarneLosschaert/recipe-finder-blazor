@@ -1,0 +1,20 @@
+@import "../wwwroot/css/colors.scss";
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .content {
+        flex: 1;
+    }
+}
+
+body {
+    background-color: $beige;
+
+    p {
+        font-size: 1rem;
+        color: $green-dark;
+    }
+}
