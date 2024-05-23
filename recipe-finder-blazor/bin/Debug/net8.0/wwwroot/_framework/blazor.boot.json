@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "recipe-finder-blazor",
   "resources": {
-    "hash": "sha256-7Y0Z9ax3tX4+3nhcqq8fsVBG5qssN8Us0fJ7+O6rpgI=",
+    "hash": "sha256-obhyc70BshwfEle0DLOC4j+gGp5GKext9xguZ2AT0yA=",
     "jsModuleNative": {
       "dotnet.native.8.0.1.kbijyg5yi3.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-EpWTfh4m/hEcXRFYMCR9YeYHwdUJgcm1laBaxWfq2S4=",
       "netstandard.wasm": "sha256-2kH24/YfHmU3B4eYRyRmiwebYROM4+B9eDWKvMnUdP8=",
       "System.Private.CoreLib.wasm": "sha256-CsySKiP7HYY1pS8LTDE60EkqiX5oHb3WoEZHDNd1yK0=",
-      "recipe-finder-blazor.wasm": "sha256-7jxd9nulaLWkuymL4UsvhflUXlukRFLFrCdJXrBLRhU="
+      "recipe-finder-blazor.wasm": "sha256-jn47NAR/PQFhgMS2qs2QykOvdEPiR4b/K0CaaEp5TfM="
     },
     "pdb": {
-      "recipe-finder-blazor.pdb": "sha256-BiA2yHwCMIIjrNK3/z2PP9py7dH6QqpyUWYhFsfQoyY="
+      "recipe-finder-blazor.pdb": "sha256-oZgA8sS58BKCA+apqUXgbVShxW+Syoi5VWFgq2Zn5b4="
     }
   },
   "cacheBootResources": true,

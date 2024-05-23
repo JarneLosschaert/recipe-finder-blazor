@@ -26,5 +26,9 @@
   {
     "outputFile": "Pages/RecipeDetails.razor.css",
     "inputFile": "Pages/RecipeDetails.razor.scss"
+  },
+  {
+    "outputFile": "Components/RecipeCard.razor.css",
+    "inputFile": "Components/RecipeCard.razor.scss"
   }
 ]

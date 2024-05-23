@@ -1034,3 +1034,5 @@ C:\Users\jarne\Howest\BAP\code\recipe-finder-blazor\recipe-finder-blazor\recipe-
 C:\Users\jarne\Howest\BAP\code\recipe-finder-blazor\recipe-finder-blazor\recipe-finder-blazor\obj\Debug\net8.0\scopedcss\Layout\Header.razor.rz.scp.css
 C:\Users\jarne\Howest\BAP\code\recipe-finder-blazor\recipe-finder-blazor\recipe-finder-blazor\obj\Debug\net8.0\scopedcss\Pages\FindRecipe.razor.rz.scp.css
 C:\Users\jarne\Howest\BAP\code\recipe-finder-blazor\recipe-finder-blazor\recipe-finder-blazor\obj\Debug\net8.0\scopedcss\Pages\RecipeDetails.razor.rz.scp.css
+C:\Users\jarne\Howest\BAP\code\recipe-finder-blazor\recipe-finder-blazor\recipe-finder-blazor\obj\Debug\net8.0\recipe-finder-blazor.sourcelink.json
+C:\Users\jarne\Howest\BAP\code\recipe-finder-blazor\recipe-finder-blazor\recipe-finder-blazor\obj\Debug\net8.0\scopedcss\Components\RecipeCard.razor.rz.scp.css

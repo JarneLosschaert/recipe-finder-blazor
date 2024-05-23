@@ -1,3 +1,30 @@
+/* /Components/RecipeCard.razor.rz.scp.css */
+.recipe[b-2qldy78k0d] {
+  background: #F0E3D3;
+  width: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.recipe img[b-2qldy78k0d] {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.recipe h3[b-2qldy78k0d] {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.recipe p[b-2qldy78k0d] {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.recipe:hover[b-2qldy78k0d] {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1.025);
+  cursor: pointer;
+}
 /* /Layout/Footer.razor.rz.scp.css */
 footer[b-wyyx9hoal7] {
   background-color: #333;
@@ -107,32 +134,6 @@ body p[b-hno46idn9c] {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-}
-.find-recipe .recipes div[b-lmuil0b4uz] {
-  background: #F0E3D3;
-  width: 300px;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-.find-recipe .recipes div img[b-lmuil0b4uz] {
-  width: 100%;
-  border-radius: 5px;
-  object-fit: cover;
-}
-.find-recipe .recipes div h3[b-lmuil0b4uz] {
-  margin-top: 10px;
-  font-size: 1.2rem;
-}
-.find-recipe .recipes div p[b-lmuil0b4uz] {
-  margin-top: 10px;
-  font-size: 1rem;
-}
-.find-recipe .recipes div:hover[b-lmuil0b4uz] {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  transform: scale(1.025);
-  cursor: pointer;
 }
 /* /Pages/Home.razor.rz.scp.css */
 .home .header[b-8nth9rxvwh] {

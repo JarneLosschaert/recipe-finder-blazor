@@ -34,29 +34,3 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
-.find-recipe .recipes div {
-  background: #F0E3D3;
-  width: 300px;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-.find-recipe .recipes div img {
-  width: 100%;
-  border-radius: 5px;
-  object-fit: cover;
-}
-.find-recipe .recipes div h3 {
-  margin-top: 10px;
-  font-size: 1.2rem;
-}
-.find-recipe .recipes div p {
-  margin-top: 10px;
-  font-size: 1rem;
-}
-.find-recipe .recipes div:hover {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  transform: scale(1.025);
-  cursor: pointer;
-}

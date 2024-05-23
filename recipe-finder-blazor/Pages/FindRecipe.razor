@@ -57,13 +57,9 @@
     @if (recipes.Count > 0)
     {
         <div class="recipes">
-
             @foreach (var recipe in recipes)
             {
-                <div @onclick="(() => ShowRecipeDetails(recipe))">
-                    <img src="@recipe.Image" alt="@recipe.Title" />
-                    <p>@recipe.Title</p>
-                </div>
+                <RecipeCard recipe="recipe"></RecipeCard>
             }
         </div>
     }
