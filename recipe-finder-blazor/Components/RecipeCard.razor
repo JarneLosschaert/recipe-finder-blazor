@@ -1,0 +1,16 @@
+﻿@inject NavigationManager NavigationManager
+
+<div class="recipe" @onclick="ShowRecipeDetails">
+    <img src="@recipe.Image" alt="@recipe.Title" />
+    <p>@recipe.Title</p>
+</div>
+
+@code {
+    [Parameter]
+    public Recipe recipe { get; set; } = new Recipe();
+
+    private void ShowRecipeDetails()
+    {
+        NavigationManager.NavigateTo($"/recipe/{recipe.Id}");
+    }
+}

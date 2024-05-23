@@ -1,0 +1,32 @@
+@import "../wwwroot/css/colors.scss";
+
+.recipe {
+    background: $beige-dark;
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+    img {
+        width: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    h3 {
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    &:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        transform: scale(1.025);
+        cursor: pointer;
+    }
+}
